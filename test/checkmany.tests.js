@@ -1,5 +1,5 @@
 describe('this test' , function(){
-    it('should show you if the origin of a vehicle registration number is Western Cape/KZN' , function(){
+    it('should match the vehicle registration number to a location' , function(){
         assert.equal(regCheck('DC 55 YU GP', 'GP'), true);
         assert.equal(regCheck('DC 55 YU GP', 'EC'), false);
 
