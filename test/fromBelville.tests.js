@@ -1,6 +1,8 @@
-describe('this test' , function(){
-    it('should show if the origin of a vehicle registration number is Belville or not' , function(){
+describe('The isFromBelville function...' , function(){
+    it('should return true if a vehicle registration number is from Belville' , function(){
         assert.equal(isFromBellville('CY 123'), true);
+    });
+    it('should return false if a vehicle registration number is NOT from Belville' , function(){
         assert.equal(isFromBellville('CJ 123'), false);
     });
 });
